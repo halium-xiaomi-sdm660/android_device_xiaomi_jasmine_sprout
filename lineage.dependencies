@@ -1,0 +1,7 @@
+[
+  {
+    "repository":  "nebrassy/device_xiaomi_sdm660-common-sailfish",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch":      "hybris-16.0"
+  }
+]

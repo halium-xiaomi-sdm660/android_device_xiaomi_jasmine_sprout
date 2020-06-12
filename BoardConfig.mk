@@ -46,7 +46,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
 # Root Folders
-BOARD_ROOT_EXTRA_FOLDERS := persist
+BOARD_ROOT_EXTRA_FOLDERS := persist efs
 
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2018-06-05
@@ -59,3 +59,4 @@ WLAN_MAC_SYMLINK := true
 ifeq ($(BUILD_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
 endif
+

@@ -131,6 +131,11 @@ $(call inherit-product, build/target/product/verity.mk)
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
 
+# Halium/UBports
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/70-jasmine_sprout.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/scaling.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf
+
 # AOSP DEVICE
 PRODUCT_NAME := aosp_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout

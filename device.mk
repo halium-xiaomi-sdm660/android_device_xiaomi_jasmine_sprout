@@ -105,7 +105,7 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
 # Update engine
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 	brillo_update_payload \
 	update_engine \
 	update_engine_sideload \
